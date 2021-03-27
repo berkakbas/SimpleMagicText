@@ -7,28 +7,38 @@
     tools:context=".VideoPlayActivity">
 
 
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/videoView" />
+
     <Button
         android:id="@+id/playButton"
         android:layout_width="180dp"
         android:layout_height="75dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginTop="30dp"
         android:text="Play"
         android:textAllCaps="false"
-        app:layout_constraintBottom_toTopOf="@+id/addTextButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar" />
 
     <Button
         android:id="@+id/addTextButton"
         android:layout_width="180dp"
         android:layout_height="75dp"
-        android:layout_marginBottom="60dp"
+        android:layout_marginTop="20dp"
         android:text="Add Text"
         android:textAllCaps="false"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playButton" />
 
     <VideoView
         android:id="@+id/videoView"
@@ -40,4 +50,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/videoView"
+        app:layout_constraintTop_toTopOf="@+id/videoView" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

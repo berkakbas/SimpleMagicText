@@ -7,7 +7,7 @@
     tools:context=".VideoEditActivity">
 
     <VideoView
-        android:id="@+id/videoView"
+        android:id="@+id/editVideoView"
         android:layout_width="fill_parent"
         android:layout_height="300dp"
         android:layout_marginLeft="48dp"
@@ -16,6 +16,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <SeekBar
+        android:id="@+id/editSeekBar"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editVideoView" />
 
     <Button
         android:id="@+id/saveButton"
@@ -26,5 +37,14 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/videoView" />
+        app:layout_constraintTop_toBottomOf="@+id/editVideoView" />
+
+    <TextView
+        android:id="@+id/videoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/editVideoView"
+        app:layout_constraintTop_toTopOf="@+id/editVideoView" />
 </androidx.constraintlayout.widget.ConstraintLayout>
