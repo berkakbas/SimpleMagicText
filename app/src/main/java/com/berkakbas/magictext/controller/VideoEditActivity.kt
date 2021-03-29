@@ -59,7 +59,6 @@ class VideoEditActivity : Activity() {
         //Save current video edit to TextHolder List
         saveButton.setOnClickListener {
             TextHolder.coordinateMap.put(input,currentTextCoordinates)
-            TextHolder.allTextCoordinates.add(currentTextCoordinates)
             intent = Intent(this, VideoPlayActivity::class.java)
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK)
             startActivity(intent)
