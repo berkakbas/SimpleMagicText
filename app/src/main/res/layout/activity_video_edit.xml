@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".VideoEditActivity">
+    tools:context=".controller.VideoEditActivity">
 
     <VideoView
         android:id="@+id/editVideoView"
@@ -30,9 +30,12 @@
 
     <Button
         android:id="@+id/saveButton"
+        android:background="@drawable/button_style"
         android:layout_width="180dp"
         android:layout_height="75dp"
         android:text="Save"
+        android:textSize="18sp"
+        android:textColor="@color/white"
         android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

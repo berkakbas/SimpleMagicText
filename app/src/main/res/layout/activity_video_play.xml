@@ -2,9 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/firstScreenLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".VideoPlayActivity">
+    tools:context=".controller.VideoPlayActivity">
 
 
     <SeekBar
@@ -23,8 +24,11 @@
         android:layout_width="180dp"
         android:layout_height="75dp"
         android:layout_marginTop="30dp"
+        android:background="@drawable/button_style"
         android:text="Play"
         android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/seekBar" />
@@ -34,8 +38,11 @@
         android:layout_width="180dp"
         android:layout_height="75dp"
         android:layout_marginTop="20dp"
+        android:background="@drawable/button_style"
         android:text="Add Text"
         android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/playButton" />

@@ -9,8 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".VideoEditActivity"></activity>
-        <activity android:name=".VideoPlayActivity">
+        <activity android:name=".controller.VideoEditActivity"></activity>
+        <activity android:name=".controller.VideoPlayActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
